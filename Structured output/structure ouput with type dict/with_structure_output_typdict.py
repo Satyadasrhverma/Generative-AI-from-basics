@@ -36,6 +36,6 @@ compared to other brands. Hoping for a software update to fix this.
 response = model.invoke(prompt)
 
 # Parse JSON -> dict
-result: Review = parser.parse(response.content)
+result = parser.parse(response.content)
 
 print(result)

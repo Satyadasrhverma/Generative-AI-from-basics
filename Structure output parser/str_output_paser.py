@@ -1,7 +1,6 @@
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
-from langchain_core.output_parsers import 
 load_dotenv()
 
 llm = HuggingFaceEndpoint(
@@ -19,7 +18,7 @@ template1 = PromptTemplate(
 )
 
 template2 = PromptTemplate(
-    template= "write a 5 line summary on the following text./n {text}",
+    template= "write a 5 point of line summary on the following text./n {text}",
     input_variables= ['text']
 )
 

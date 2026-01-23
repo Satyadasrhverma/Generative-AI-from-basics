@@ -1,0 +1,50 @@
+**Artificial Intelligence (AI) Notes**
+
+* **Definition**: AI is a branch of computer science that focuses on creating machines capable of performing human-like tasks.
+* **Key Tasks**: 
+  - Learning from data
+  - Recognizing patterns
+  - Understanding natural language
+  - Making decisions
+* **Applications**: 
+  - Virtual assistants
+  - Recommendation systems
+  - Autonomous vehicles
+  - Healthcare diagnostics
+  - Fraud detection
+* **Advancements**: 
+  - Machine learning
+  - Deep learning
+  - Increased accuracy and efficiency of AI systems
+
+**Artificial Intelligence (AI) Quiz**
+
+Q1: What is Artificial Intelligence?
+A1: Artificial Intelligence (AI) refers to the development of computer systems that can perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making.
+
+Q2: What is Machine Learning?
+A2: Machine Learning is a subset of Artificial Intelligence that involves training computer algorithms to learn from data and improve their performance on a specific task over time, without being explicitly programmed.
+
+Q3: What is the primary goal of Natural Language Processing (NLP)?
+A3: The primary goal of Natural Language Processing (NLP) is to enable computers to understand, interpret, and generate human language, allowing for more effective communication between humans and machines.
+
+Q4: What is a Neural Network?
+A4: A Neural Network is a type of machine learning algorithm inspired by the structure and function of the human brain, consisting of interconnected nodes (neurons) that process and transmit information to learn and make decisions.
+
+Q5: What is the term for the ability of a machine to perform a specific task without human intervention?
+A5: The term for the ability of a machine to perform a specific task without human intervention is Autonomy, which is often achieved through the use of Artificial Intelligence and Machine Learning technologies.
+
+**Key Takeaways**
+
+* AI focuses on creating machines that can perform human-like tasks.
+* Key tasks of AI include learning from data, recognizing patterns, understanding natural language, and making decisions.
+* AI has numerous applications, including virtual assistants, recommendation systems, and autonomous vehicles.
+* AI advancements include machine learning, deep learning, and increased accuracy and efficiency of AI systems.
+
+**Multiple Choice Questions**
+
+* What is AI?
+  - A) A subset of machine learning
+  - B) A branch of computer science that focuses on creating machines capable of performing human-like tasks
+  - C) A type of neural network
+  - D) A method

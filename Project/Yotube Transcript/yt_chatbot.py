@@ -53,14 +53,15 @@ embedding = HuggingFaceEmbeddings(
 
 vector_store = FAISS.from_documents(chunks,embedding)
 
-retriver = vector_store.as_retriever(search_type ="similarity" , search_kwargs ={"k" : 4})
+retriever = vector_store.as_retriever(search_type ="similarity" , search_kwargs ={"k" : 4})
 
 
 prompt = PromptTemplate(
     template="""
-You are a helpful assistant.
-Answer ONLY from the provided transcript context.
-If the context is insufficient, just say you don't know.
+If the transcript does not contain the answer,
+you MAY answer from general knowledge,
+but clearly mention it is not from the video.
+
 
 Context:
 {context}
@@ -77,18 +78,21 @@ def format_docs(docs):
 
 output_parser = StrOutputParser()
 
-question = "What is this video mainly about?"
+question = "What topic does the speaker explain in the first 5 minutes?"
 
-docs = retriver.invoke(question)
-context = format_docs(docs)
+
+docs = retriever.invoke(question)
+
+if not docs:
+    context = "No relevant transcript context found."
+else:
+    context = format_docs(docs)
 
 final_prompt = prompt.format(
     context=context,
     question=question
 )
 
-chain = model | output_parser
-
-answer = chain.invoke(final_prompt)
+answer = (model | output_parser).invoke(final_prompt)
 
 print(answer)

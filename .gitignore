@@ -1,2 +1,7 @@
 .env
 venv/
+vector_store/yt_store/19b93eb4-13f4-4d9a-bf2b-fcf9d8c11063/link_lists.bin
+vector_store/yt_store/19b93eb4-13f4-4d9a-bf2b-fcf9d8c11063/data_level0.bin
+vector_store/yt_store/19b93eb4-13f4-4d9a-bf2b-fcf9d8c11063/header.bin
+vector_store/yt_store/chroma.sqlite3
+vector_store/yt_store/19b93eb4-13f4-4d9a-bf2b-fcf9d8c11063/length.bin

@@ -36,7 +36,7 @@ docs = [
         metadata={"team": "MI"}
     ),
     Document(
-        page_content="Ravindra Jadeja is a dynamic all-rounder.",
+        page_content="Ravindra Jadeja is a dynamic all-rounder and bowler.",
         metadata={"team": "CSK"}
     )
 ]

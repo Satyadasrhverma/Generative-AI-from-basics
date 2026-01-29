@@ -15,23 +15,28 @@ llm = HuggingFaceEndpoint(
 
 model = ChatHuggingFace(llm=llm)
 
-video_id = "vJOGC8QJZJQ"
+video_id = "Gfr50f6ZBvo"
 
 
 try:
-    transcript_list = YouTubeTranscriptApi.get_transcript(
-        video_id,
-        languages=["en"]
-    )
+    transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
 
-    transcript = " ".join(chunk["text"] for chunk in transcript_list)
+    transcript = transcript_list.find_transcript(
+        ["en", "en-US", "a.en"]
+    ).fetch()
 
-except (TranscriptsDisabled, NoTranscriptFound):
-    print("❌ Transcript not accessible for this video.")
+    transcript = " ".join(item["text"] for item in transcript)
+
+except TranscriptsDisabled:
+    print("❌ Transcripts are disabled for this video.")
+    exit()
+
+except NoTranscriptFound:
+    print("❌ No English transcript found.")
     exit()
 
 except Exception as e:
-    print("❌ YouTube blocked transcript access:", e)
+    print("❌ Failed to fetch transcript:", e)
     exit()
 
 

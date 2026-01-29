@@ -12,7 +12,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEndpointEmbeddings
 
 # using a vector store ( chroma in here)
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 
 # now we will merge the query and the retrieved vector
 from langchain_core.prompts import PromptTemplate
